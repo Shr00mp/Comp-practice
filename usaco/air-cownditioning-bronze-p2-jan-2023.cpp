@@ -4,7 +4,7 @@ using namespace std;
 vector<int> prices;
 vector<vector<int>> air_conditions;
 
-// For the stalls, if one stall's requirements fulfilled, it will be -1
+// For the stalls, if one stall's requirements fulfilled, will be -1
 void search(int k, int n, vector<int> stalls, int price) {
     // k --> the index of air_conditioner we are including / exluding
     // n --> total number of air conditioners
