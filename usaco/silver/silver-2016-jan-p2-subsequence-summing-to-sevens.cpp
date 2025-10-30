@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    freopen("div7.in", "r", stdin);
+    // freopen("div7.in", "r", stdin);
 
     int N; 
     cin >> N;
@@ -35,6 +35,6 @@ int main() {
             }
         }
     }
-    freopen("div7.out", "w", stdout);
+    // freopen("div7.out", "w", stdout);
     cout << largest_range;
 }
