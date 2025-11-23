@@ -41,8 +41,8 @@ int main() {
         adj_list_one[a].push_back(b);
         adj_list_two[b].push_back(a);
     }
-    // Perform DFS or BFS on both adj lists
 
+    // Perform DFS or BFS on both adj lists
     if (!check_if_connected(adj_list_one, n)) {
         cout << "NO" << "\n" << disconnected_pair[0] << " " << disconnected_pair[1];
     } else if (!check_if_connected(adj_list_two, n)) {
