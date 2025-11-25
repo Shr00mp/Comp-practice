@@ -92,7 +92,7 @@ int main() {
     // Here, we need to iterate through all possible rectangles
     for (int top_left_r=0; top_left_r<=N; top_left_r++) {
         for (int top_left_c=0; top_left_c<=N; top_left_c++) {
-            
+            // unfinished
         }
     }
 }
