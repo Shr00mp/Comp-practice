@@ -93,6 +93,12 @@ void part_a_ii() {
     }
 }
 
+void part_b() {
+    // 1.10cm (3sf)
+    // Between e.g. A and B on one camera
+    // Use cosine rule to find length of AB, then divide by 2
+}
+
 int main() {
     part_a_ii();
 }
