@@ -32,5 +32,9 @@ int main() {
 
     // A common mistake you make is to forget to set some count variable to 0 at start
     // Don't forget to do that!
+
+    // Remember to make values long long!
+
+    // If you scale a shape by e.g. 1/2, it means that their SIDE LENGTH is half of what it was before
 }
 
