@@ -82,13 +82,9 @@ int part_a() {
         min_index = get_min_index(min_vals);
         if (min_vals[min_index] == 0 and already_unplugged) {
             already_unplugged = false;
-            int min_val = 20;
-            for (int idx=0; idx<min_vals.size(); idx++) {
-                if (min_vals[idx] < min_val && min_vals[idx] != 0) {
-                    min_index = idx;
-                    min_val = min_vals[idx];
-                }
-            }
+            num_turns++;
+        } else if (min_vals[min_index] == 0) {
+            already_unplugged = true;
         }
         num_turns += min_vals[min_index];
         end = min(min_index+2, (int) min_vals.size()-1);
