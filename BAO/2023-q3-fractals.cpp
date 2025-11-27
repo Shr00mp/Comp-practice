@@ -85,6 +85,14 @@ void part_c() {
     // III - This is true because (explanation written on paper)
 }
 
+void part_d() {
+    // (i) In every iteration, for every separate tetrahedron, a triangle from each of the 4 faces
+    // is removed, but the surface area of that triangle is made up for by the 4 extra faces
+    // created after removing the middle tetrahedron.
+    // More rigorous mathematical proof on paper
+    // Constant surface area = L^2 * sqrt(3)
+}
+
 int main() {
     int ans = part_b();
     cout << ans;
