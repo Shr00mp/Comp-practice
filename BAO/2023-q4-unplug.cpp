@@ -98,7 +98,38 @@ int part_a() {
     return num_turns;
 }
 
+
+int denary_to_base_five(int denary, int highest_power) {
+    vector<int> base_five;
+    for (int p=highest_power; p>=0; p--) {
+        base_five.push_back((int) (denary / pow(5, p)));
+        denary = denary % (int) pow(5, p);
+    }
+    int num = 0;
+    for (int digit: base_five) {
+        num = num*10 + digit;
+    }
+    return num;
+}
+
+void part_b() {
+    cout << (int) 'B'; // 66
+    int num1 = denary_to_base_five(66, 2);
+    cout << (int) 'A'; // 65
+    int num2 = denary_to_base_five(65, 2);
+    cout << (int) 'O'; // 79
+    int num3 = denary_to_base_five(79, 2);
+    cout << "\n";
+    cout << num1 << num2 << num3;
+}
+
+int part_c() {
+
+}
+
 int main() {
-    long long num_turns = part_a();
-    cout << num_turns;
+    // long long num_turns = part_a();
+    // cout << num_turns;
+
+    part_b();
 }
