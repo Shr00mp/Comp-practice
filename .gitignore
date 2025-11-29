@@ -1,3 +1,5 @@
 # Ignore compiled executables
 *.exe
 *.json
+
+BAO\test.cpp
