@@ -2,4 +2,4 @@
 *.exe
 *.json
 
-BAO\test.cpp
+BAO/syntax.cpp
