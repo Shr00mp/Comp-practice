@@ -12,6 +12,7 @@ int part_c(){
     for (long long a=0; a<=top_a; a++) {
         remainder = n - pow(a, 2);
         top_b = sqrt(remainder);
+        // Edge case since cannot equal n
         if (pow(top_b, 2) + pow(a, 2) == n) {
             total += top_b;
         } else {
