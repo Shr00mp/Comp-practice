@@ -3,3 +3,4 @@
 *.json
 
 BAO/syntax.cpp
+BAO/test.cpp
