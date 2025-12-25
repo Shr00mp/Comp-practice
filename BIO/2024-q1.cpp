@@ -2,7 +2,7 @@
 using namespace std;
 #include <cmath>
 
-int main() {
+int part_a() {
     long long n, i;
     cin >> n >> i;
     long long curr_digit_num, diff;
@@ -27,4 +27,22 @@ int main() {
     }
     whole_num = n + whole_num;
     cout << (to_string(whole_num))[remainder-1];
+    return 0;
+}
+
+int part_c() {
+    long long total = 0;
+    for (int digit=1; digit<9; digit++) {
+        total += ((pow(10, digit) - pow(10, digit-1))) * digit;
+    }
+    total += (long long)(98765432 * 9);
+    total += 2;
+    cout << "start: " << total << "\n"; 
+    cout << "end: " << total + 8 << "\n";
+    return 0;
+}
+
+
+int main() {
+    part_c();
 }
