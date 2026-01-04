@@ -1,9 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool already_visited(vector<vector<string>> &visited, vector<string> &curr) {
-    for (vector<string> s: visited) 
-        if (s == curr) return true;
+bool already_visited(set<vector<string>> &visited, vector<string> &curr) {
+    if (visited.count(curr)) return true;
     return false;
 }
 
@@ -23,7 +22,7 @@ void part_a() {
     // conduct a bfs
     queue<tuple<vector<string>, int>> q;
     q.push({original, 0});
-    vector<vector<string>> visited;
+    set<vector<string>> visited;
     vector<string> current; vector<string> neighbour;
     int level;
     if (original == goal) {
@@ -34,7 +33,7 @@ void part_a() {
         current = get<0>(q.front());
         level = get<1>(q.front());
         q.pop();
-        visited.push_back(current);
+        visited.insert(current);
         // generate next combinations
         // by moving top of i to top of j
         for (int moving=0; moving<4; moving++) {
