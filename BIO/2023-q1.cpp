@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> fib_sequence;
+vector<long long> fib_sequence;
 
-void generate_fib(int n) {
-    int first = 1;
-    int second = 2;
-    int third = first + second;
+void generate_fib(long long n) {
+    long long first = 1;
+    long long second = 2;
+    long long third = first + second;
     fib_sequence.push_back(first); 
     fib_sequence.push_back(second);
     while (third <= n) {
@@ -17,7 +17,7 @@ void generate_fib(int n) {
     return;
 }
 
-int main() {
+void part_a() {
     // brute force 
     // suppose that we want to include two adjacent numbers
     // our code will always instead just choose the number they sum to 
@@ -42,6 +42,22 @@ int main() {
     for (int i=0; i<result.size(); i++) {
         cout << result[i] << " ";
     }
+    return;
+}
 
-    return 0;
+void part_b() {
+    generate_fib(1000000);
+    cout << fib_sequence.back(); // 832040
+    return;
+}
+
+void part_c() {
+    generate_fib(53316291173);
+    cout << (long long) fib_sequence.size(); // 52
+    // choose 3 numbers, but no 2 can be next to each other 
+    // and must add to less than 1,000,000 
+    return;
+}
+
+int main() {
 }
