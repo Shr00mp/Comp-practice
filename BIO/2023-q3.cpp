@@ -56,6 +56,20 @@ void part_a() {
     return; 
 }
 
+void part_b() {
+    // number of arrangements of: 
+    // one 0, one two-number stack and the rest singles
+    // 4 x 4 x 3 x 3 x 2
+    // choose 0 location, choose base, choose top, rearrange 3 blocks
+    // = 288
+    return;
+}
+
+void part_c() {
+    // can similuate quite easily with BFS, similar to part a
+    return;
+}
+
 int main() {
     part_a();
 }
