@@ -76,7 +76,7 @@ int main() {
     // in case above, only erases index 2 
     s.pop_back(); 
 
-        int i;
+    int i;
     i = s.find('a'); // returns index of first occurence
     i = s.find_first_of('a'); // same as above
     i = s.rfind('a'); // returns index of last occurence
